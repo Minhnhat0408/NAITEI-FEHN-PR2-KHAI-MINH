@@ -1,7 +1,8 @@
 <template>
     <div>
       <AppHeader ref="pageHeaderRef" />
-      <main><slot :headerHeight="actualHeaderHeight" /></main>
+      <slot :headerHeight="actualHeaderHeight" />
+      <AppFooter />
     </div>
   </template>
 <script setup>
